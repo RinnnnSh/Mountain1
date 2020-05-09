@@ -1,0 +1,6 @@
+<svg id="svg1" xmlns="http://www.w3.org/2000/svg"
+    xmlns:xlink="http://www.w3.org/1999/xlink"
+     width="14" height="14" viewBox="0 0 14 14" >
+     <circle cx="7" cy="7" r="6" fill="none" stroke="#FCFCFC" stroke-width="2"/>
+     <circle cx="7" cy="7" r="6" fill="none" stroke-dashoffset="40px" stroke-dasharray="50px"  stroke="#061B28" stroke-width="2" transform="rotate(-92)" transform-origin="7px 7px"/>
+</svg>
