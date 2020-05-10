@@ -40,7 +40,7 @@ a:hover {
 
 header {
   display: flex;
-  align-items:flex-start;
+  align-items: flex-start;
   justify-content: space-between;
   box-sizing: border-box;
   height: 650px;
@@ -48,7 +48,7 @@ header {
 
   margin-bottom: 140px;
   color: #FCFCFC;
-  background: #E5E5E5 url("img/header.jpg") no-repeat 0 0;
+  background: #FCFCFC url("img/header.jpg") no-repeat 0 0;
   font-size: 16px;
  }
 
@@ -64,22 +64,22 @@ header .logo {
 }
 .header-nav-list {
   display: inline-block;
-  margin-right: 250px;
 }
 .header-nav-list li {
   display: inline-block;
   margin-right: 30px;
 }
+
 header .bt {
   display: inline-block;
-
+  margin-top: 0;
+  margin-bottom: 0;
   width: 35px;
   height: 35px;
   border: 0px solid white;
   border-radius: 50%;
 }
 header .search {
-  margin-left: 43px;
   margin-right: 30px;
   background: rgba(252, 252, 252, 0.4) url("img/src.svg") no-repeat 50% 50%;
 }
@@ -91,10 +91,19 @@ header .login {
 header nav {
   display: flex;
   align-items: center;
-  justify-content:center;
 }
-
-
+header div {
+  height: 36px;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+header .nav-phone {
+  display: inline-block;
+  line-height: 36px;
+  vertical-align: top;
+  margin-right: 50px;
+  height: 36px;
+}
 
 
 
