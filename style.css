@@ -99,10 +99,9 @@ header div {
 }
 header .nav-phone {
   display: inline-block;
-  line-height: 36px;
-  vertical-align: top;
   margin-right: 50px;
-  height: 36px;
+  vertical-align: middle;
+  transform: translateY(-12px);
 }
 
 
