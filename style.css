@@ -1,6 +1,7 @@
 body {
   position: relative;
-  width: 1366px;
+  min-width: 680px;
+  max-width: 1366px;
   margin: 0 auto;
   padding: 0;
   font-family: "Roboto", sans-serif;
@@ -41,13 +42,13 @@ a:hover {
 header {
   display: flex;
   align-items: flex-start;
-  justify-content: space-between;
   box-sizing: border-box;
   height: 650px;
   padding-top: 40px;
 
   margin-bottom: 140px;
   color: #FCFCFC;
+  line-height: 36px;
   background: #FCFCFC url("img/header.jpg") no-repeat 0 0;
   font-size: 16px;
  }
@@ -64,6 +65,7 @@ header .logo {
 }
 .header-nav-list {
   display: inline-block;
+  margin-right: auto;
 }
 .header-nav-list li {
   display: inline-block;
@@ -80,28 +82,29 @@ header .bt {
   border-radius: 50%;
 }
 header .search {
-  margin-right: 30px;
+margin: 0 15px;
   background: rgba(252, 252, 252, 0.4) url("img/src.svg") no-repeat 50% 50%;
 }
 header .login {
-  margin-right: 98px;
+  margin-left: 15px;
   background: rgba(252, 252, 252, 0.4) url("img/log.svg") no-repeat 50% 50%;
 }
 
 header nav {
   display: flex;
-  align-items: center;
+  align-items: flex-start;
+  margin-right: auto;
+  flex-grow: 1;
 }
 header div {
   height: 36px;
-  align-items: flex-start;
-  justify-content: space-between;
+  margin-right: 98px;
 }
 header .nav-phone {
-  display: inline-block;
-  margin-right: 50px;
-  vertical-align: middle;
-  transform: translateY(-12px);
+  min-width: 130px;
+  margin-left: auto;
+  margin-right: 35px;
+  word-wrap: normal;
 }
 
 
@@ -109,7 +112,7 @@ header .nav-phone {
 h1 {
   position: absolute;
   top: 220px;
-  left: 683px;
+  left: 50%;
   transform: translate(-50%, -50%);
   color: #FCFCFC;
   font-family: Oswald, sans-serif;
@@ -122,7 +125,7 @@ h1 {
  .bottom {
   display: inline-block;
   position: absolute;
-  left: 683px;
+  left: 50%;
   transform: translate(-50%, -50%);
   height: 45px;
   width: 170px;
@@ -146,6 +149,7 @@ main >  .bottom {
   margin-left: 98px;
   margin-bottom: 140px;
   background: #FCFCFC url("img/map.png") no-repeat 425px 150px;
+  overflow: hidden;
 }
 .climbing-tours h2 {
   width: 480px;
@@ -235,6 +239,7 @@ left: 1015px;
   margin: 0 auto;
   font-size: 18px;
   line-height: 115%;
+  margin-bottom: 20px;
 }
 .tours-list li:hover {
   transform: scale(1.05);
@@ -418,10 +423,11 @@ left: 1015px;
 }
 
 .blog > div {
-  display: inline-block;
+  float: left;
   vertical-align: top;
-  max-width: 400px;
-  margin-left: 98px;
+  width: 400px;
+  margin-left: 97px;
+  margin-right: 70px;
 }
 .blog .blog-nav-item time {
   display: inline-block;
@@ -434,13 +440,14 @@ left: 1015px;
 }
 .blog .blog-nav-item p {
   margin-left: 30px;
+  margin-right: 30px;
   margin-top: 0;
   font-size: 18px;
   line-height: 140%;
 }
 
 .blog .blog-nav-item-active {
-  width: 400px;
+  width: auto;
   height: 128px;
   background: #061B28;
   color: #FCFCFC;
@@ -451,19 +458,19 @@ left: 1015px;
 }
 
 .blog article {
-  display: inline-block;
-  vertical-align: top;
-  max-width: 700px;
-  margin-right: 97px;
-  margin-left: 63px;
-  margin-bottom: 20px;
+  clear: none;
+
+  margin: 0 97px 20px;
   font-size: 16px;
   line-height: 150%;
 }
 .blog article img {
+  min-width: 300px;
+  max-width: 690px;
   margin-bottom: 25px;
 }
 .blog article time {
+  margin: 0;
   font-size: 14px;
   line-height: 140%;
   color: #626F77;
@@ -475,6 +482,11 @@ left: 1015px;
   font-size: 22px;
   line-height: 140%;
 }
+.blog article p {
+  margin-right: 0;
+}
+
+
 
 .contacts {
   min-height: 460px;
@@ -561,7 +573,7 @@ footer .policy {
 
 .feedback {
   height: 690px;
-  background: #061B28 url("img/feedb.jpg") no-repeat 100% 0;
+  background: #061B28 url("img/feedb.jpg") no-repeat 683px 0;
   color: #FCFCFC;
   margin-bottom: 140px;
 }
@@ -617,7 +629,7 @@ footer .policy {
   transition: all 0.1s linear;
 }
 
-
+/* -----------------------------
 
 .prices {
   position: relative;
@@ -684,3 +696,84 @@ footer .policy {
 .prices .bottom {
   top: 635px;
 }
+
+ */
+
+
+
+
+ .prices {
+   position: relative;
+   margin-bottom: 140px;
+   height: 757px;
+   color: #FCFCFC;
+   background: #E5E5E5 url("img/prices.jpg") no-repeat 0 0;
+ }
+ .prices h2 {
+   padding-top: 90px;
+   padding-bottom: 0;
+   margin: 0 auto 20px;
+   text-align: center;
+   font-family: Oswald, sans-serif;
+   font-style: normal;
+   font-weight: 600;
+   font-size: 52px;
+   line-height: 115%;
+   color: #FCFCFC;
+ }
+ .prices p {
+   width: 250px;
+   margin: 0 auto;
+   margin-bottom: 45px;
+   font-family: inherit;
+   font-size: 18px;
+   line-height: 140%;
+   text-align: center;
+ }
+ .prices th {
+   padding-bottom: 10px;
+   padding-left: 3%;
+   padding-right: 3%;
+   font-family: inherit;
+   line-height: 140%;
+   color: #A7AEB4;
+   border-bottom: 1px solid #45545E;
+ }
+ .prices table {
+   min-width: 680px;
+   width: 60%;
+   max-height: 350px;
+   margin: 0 auto;
+   padding: 0;
+   text-align: left;
+   border-collapse: collapse;
+ }
+
+
+ .prices td {
+   padding-left: 3%;
+   padding-right: 3%;
+   font-weight: 500;
+   font-size: 22px;
+   line-height: 66px;
+   color: #FCFCFC;
+   border-bottom: 1px solid #45545E;
+ }
+ .prices table tr td:first-child {
+  padding-left: 10%;
+}
+.prices table tr th:first-child {
+  padding-left: 10%;
+}
+.prices table tr td:last-child {
+ padding-right: 5%;
+}
+.prices table tr th:last-child {
+ padding-right: 5%;
+}
+ .prices tr:hover td {
+   opacity: 0.6;
+ }
+ .prices .bottom {
+   top: 635px;
+ }
